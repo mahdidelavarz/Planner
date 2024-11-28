@@ -1,7 +1,12 @@
+import AuthLayout from "../../layout/AuthLayout"
 
 function SignUp() {
   return (
-    <div>SignUp</div>
+    <AuthLayout>
+      <div className="w-72 h-60 bg-primary-300">
+
+      </div>
+    </AuthLayout>
   )
 }
 
