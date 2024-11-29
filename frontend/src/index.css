@@ -146,3 +146,12 @@ table td {
   padding: 1rem 1rem;
   color: rgb(var(--color-secondary-600));
 }
+
+.custom-gradient{
+  background: rgb(34,34,46);
+background: linear-gradient(135deg, rgb(32, 32, 45) 68%, rgba(62, 36, 83) 100%);
+}
+.custom-gradient2{
+  background: rgb(34,34,46);
+background: linear-gradient(135deg, rgba(34,34,46,1) 54%, rgb(62, 36, 83) 100%);
+}
