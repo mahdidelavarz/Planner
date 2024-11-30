@@ -5,7 +5,7 @@ function Login() {
   return (
     <AuthLayout>
       <div className="w-96 h-[40rem] bg-primary-950 rounded-2xl shadow-md shadow-slate-950  z-50 custom-gradient flex flex-col gap-6 p-4">
-        <h1 className="text-2xl text-secondary-300">ورود</h1>
+        <h1 className="text-xl text-secondary-300">ورود</h1>
         <form className="w-full flex flex-col gap-8 justify-end text-secondary-300">
           <div className="w-full flex flex-col gap-2">
             <label htmlFor="fname" className="flex justify-between px-2 ">
@@ -16,7 +16,7 @@ function Login() {
               type="text"
               name="fname"
               id="fname"
-              className="p-3  rounded-xl bg-primary-900 shadow-md focus:shadow-inner focus:shadow-black shadow-slate-950 text-secondary-200"
+              className="input"
               dir="rtl"
             />
           </div>
@@ -29,11 +29,11 @@ function Login() {
               type="text"
               name="fname"
               id="fname"
-              className="p-3 focus:shadow-inner focus:shadow-black rounded-xl bg-primary-900 shadow-md shadow-slate-950 text-secondary-200"
+              className="input"
               dir="rtl"
             />
           </div>
-          <button className="w-full rounded-xl p-3 text-secondary-100 bg-secondary-900 text-xl mt-6   hover:shadow-inner shadow-md duration-300 shadow-black hover:shadow-black">
+          <button className="btn-full">
             ثبت نام
           </button>
         </form>
