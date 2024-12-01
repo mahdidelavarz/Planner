@@ -11,6 +11,7 @@ body {
   min-height: 100vh;
   user-select: none;
   background-color: rgb(var(--background-app-rgb));
+  direction: rtl;
 }
 * {
   box-sizing: border-box;
@@ -52,6 +53,10 @@ input{
     rgba(34, 34, 46, 1) 54%,
     rgb(62, 36, 83) 100%
   );
+}
+.header-gradient{
+  background: rgb(62,42,83);
+  background: linear-gradient(335deg, rgba(62,42,83,1) 0%, rgba(32,32,45,1) 30%, rgba(34,32,48,1) 70%, rgba(62,42,83,1) 100%); 
 }
 /* ______________________________________________________________________________components */
 
