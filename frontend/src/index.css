@@ -34,7 +34,7 @@ button:disabled {
 label {
   display: block;
 }
-input{
+input {
   direction: rtl;
 }
 /* _______________________________________________________________________css class styles */
@@ -54,9 +54,28 @@ input{
     rgb(62, 36, 83) 100%
   );
 }
-.header-gradient{
-  background: rgb(62,42,83);
-  background: linear-gradient(335deg, rgba(62,42,83,1) 0%, rgba(32,32,45,1) 30%, rgba(34,32,48,1) 70%, rgba(62,42,83,1) 100%); 
+.header-gradient {
+  background: rgb(62, 42, 83);
+  background: linear-gradient(
+    335deg,
+    rgba(62, 42, 83, 1) 0%,
+    rgba(32, 32, 45, 1) 30%,
+    rgba(34, 32, 48, 1) 70%,
+    rgba(62, 42, 83, 1) 100%
+  );
+}
+.cart-gradient {
+  background: #c33764; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1d2671,
+    #c33764
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1d2671,
+    #c33764
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 /* ______________________________________________________________________________components */
 
@@ -81,5 +100,47 @@ input{
   }
   .input {
     @apply p-3 outline-none  rounded-xl bg-primary-900 shadow-md focus:shadow-inner focus:shadow-black shadow-slate-950 text-secondary-200;
+  }
+}
+/* ---------------------------------------------------------------------------------------------------------------------------animations */
+.water {
+  margin: auto;
+  position: relative;
+}
+
+.water::before {
+  content: "";
+  width: 1301px;
+  height: 1301px;
+  background: #c33764;
+  background: -webkit-linear-gradient(to right, #1d2671, #c33764);
+  background: linear-gradient(to right, #1d2671, #c33764);
+  /* background-color: #60a5fa; */
+  position: absolute;
+  top: 44%;
+  left: -140%;
+  border-radius: 46%;
+  animation: anim 10s linear infinite;
+}
+
+.water::after {
+  content: "";
+  width: 1300px;
+  height: 1300px;
+  background-color: #22222e;
+  position: absolute;
+  top: 44%;
+  left: -140%;
+  border-radius: 46%;
+  animation: anim 10s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
