@@ -18,7 +18,7 @@ function RoutinePlans() {
         </button>
       </header>
       <main className="w-full pt-20 grid grid-cols-6 gap-4 px-4">
-        <div className="col-span-6 overflow-hidden h-48 cart-gradient relative rounded-xl shadow-md shadow-black ">
+        <div className="col-span-6 overflow-hidden h-48 cart-gradient relative rounded-xl shadow-md shadow-black">
           <div className="w-full h-full water rotate-180 z-0 shadow-inner shadow-black"></div>
           <div className="w-full flex justify-center items-center absolute bottom-4   rounded-full text-secondary-100">15%</div>
           <div className="w-full h-48  rounded-xl shadow-md shadow-black overflow-hidden absolute top-0  z-50">
