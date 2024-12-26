@@ -1,7 +1,10 @@
+import AppLayout from "../layout/AppLayout"
 
 function Home() {
   return (
-    <div>خانه</div>
+   <AppLayout title="داشبورد">
+
+   </AppLayout>
   )
 }
 

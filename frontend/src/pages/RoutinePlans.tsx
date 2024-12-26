@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 function RoutinePlans() {
   return (
     <div className="w-full h-[100vh] bg-primary-950">
-      <header className="w-full h-14 shadow-sm header-gradient shadow-slate-950 flex justify-between items-center px-4 text-secondary-200 gap-4 fixed top-0 rounded-b-2xl">
+      <header className="header header-gradient">
         <button className="p-2 rounded-lg">
           <Icon icon="mingcute:right-line" width="24" height="24" />
         </button>
