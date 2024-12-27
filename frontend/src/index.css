@@ -12,6 +12,7 @@ body {
   user-select: none;
   background-color: rgb(var(--background-app-rgb));
   direction: rtl;
+  background-color: #22222e;
 }
 * {
   box-sizing: border-box;
