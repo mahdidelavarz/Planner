@@ -1,11 +1,15 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { props } from "../types/AppLayoutType";
-function AppLayout({ title } : props) {
+import { AppLayoutProps } from "../types/PropsTypes";
+import { useState } from "react";
+import BurgerMenu from "../components/sidebar/BurgerMenu";
+function AppLayout({ title }: AppLayoutProps) {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="header header-gradient">
-      <button className="p-2 rounded-lg">
-      <Icon icon="solar:hamburger-menu-broken" width="24" height="24" />
+    <header className="header header-gradient z-50">
+      <button className="p-2 rounded-lg" onClick={() => setIsOpen(!isOpen)}>
+        <Icon icon="solar:hamburger-menu-broken" width="24" height="24" />
       </button>
+      <BurgerMenu isOpen={isOpen} />
       <span> {title} </span>
       <button className="p-2 rotate-180">
         <Icon icon="mingcute:right-line" width="24" height="24" />
