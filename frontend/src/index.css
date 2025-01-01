@@ -157,8 +157,10 @@ input {
 /*? ---------------------------------------------------------------------------------------------------------------------------Burger Menu */
 
 .leanerLiftMenu {
-  animation: leanerLiftMenu 0.6s linear ;
-  /* transform: translateX(-100vw); */
+  animation: leanerLiftMenu 0.6s linear;
+}
+.slowShow {
+  animation: slowShow 0.6s linear;
 }
 
 @keyframes leanerLiftMenu {
@@ -167,5 +169,13 @@ input {
   }
   100% {
     transform: translateX(0);
+  }
+}
+@keyframes slowShow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 50%;
   }
 }
