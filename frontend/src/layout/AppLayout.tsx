@@ -7,7 +7,11 @@ function AppLayout({ title }: AppLayoutProps) {
   return (
     <header className="header header-gradient z-50">
       <button className="p-2 rounded-lg" onClick={() => setIsOpen(!isOpen)}>
-        <Icon icon="solar:hamburger-menu-broken" width="24" height="24" />
+        {isOpen ? (
+          <Icon icon="solar:close-square-broken" width="24" height="24" />
+        ) : (
+          <Icon icon="solar:hamburger-menu-broken" width="24" height="24" />
+        )}
       </button>
       <BurgerMenu isOpen={isOpen} />
       <span> {title} </span>
