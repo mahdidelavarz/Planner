@@ -6,7 +6,7 @@ function AppLayout({ title, children }: AppLayoutProps) {
     <>
       <header className="header header-gradient z-50">
         <button className="p-2">
-          <Icon icon="mingcute:right-line" width="24" height="24" />
+        <Icon icon="lineicons:search-2" width="24" height="25" />
         </button>
         <span> {title} </span>
         <button className="p-2">
