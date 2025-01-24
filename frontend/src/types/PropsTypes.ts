@@ -1,5 +1,6 @@
 export type BurgerMenuProps = {
   isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 export type AppLayoutProps = {
