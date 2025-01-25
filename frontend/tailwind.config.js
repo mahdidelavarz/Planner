@@ -1,11 +1,11 @@
-const { nextui } = require('@nextui-org/theme');
+const { heroui } = require("@heroui/theme");
 import { fontFamily } from "tailwindcss/defaultTheme";
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/@nextui-org/theme/dist/components/(button|ripple|spinner).js"
+    "./node_modules/@heroui/theme/dist/components/(button|ripple|spinner).js"
   ],
   theme: {
     extend: {
@@ -77,7 +77,7 @@ export default {
       },
     },
   },
-  plugins: [nextui()],
+  plugins: [heroui()],
 }
 function withOpacity(variableName) {
   return `${variableName}`;

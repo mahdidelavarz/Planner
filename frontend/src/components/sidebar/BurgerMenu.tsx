@@ -1,6 +1,8 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { BurgerMenuProps } from "../../types/PropsTypes";
 import GradientLine from "../ui/GradientLine";
+import Accordion from "../ui/Accordion";
+
 function BurgerMenu({ isOpen, setIsOpen }: BurgerMenuProps) {
   return (
     <>
@@ -46,57 +48,68 @@ function BurgerMenu({ isOpen, setIsOpen }: BurgerMenuProps) {
               className="text-blue-500"
             />
           </div>
-          <div className="w-full px-2 flex justify-between py-3 rounded-lg duration-300  hover:bg-primary-900">
-            <div className="flex gap-3">
+          <Accordion
+            title="تسک ها"
+            icon={
               <Icon
                 icon="solar:clipboard-check-broken"
                 width="22"
                 height="22"
                 className="text-green-400"
               />
-              <span>تسک ها</span>
+            }
+            qty="h-20"
+            color="text-green-500"
+          >
+            <div className="w-full p-2 rounded-lg flex gap-3 duration-300  hover:bg-primary-900">
+              <Icon icon="solar:money-bag-broken" width="24" height="24" />
+              <span>تسک های کاری</span>
             </div>
-            <Icon
-              icon="solar:alt-arrow-left-bold-duotone"
-              width="24"
-              height="24"
-              className="text-green-400"
-            />
-          </div>
-          <div className="w-full px-2 flex justify-between py-3 rounded-lg duration-300 hover:bg-primary-900">
-            <div className="flex gap-3">
+            <div className="w-full p-2 rounded-lg flex gap-3 duration-300  hover:bg-primary-900">
+              <Icon icon="solar:home-broken" width="24" height="24" />
+              <span>تسک های شخصی</span>
+            </div>
+          </Accordion>
+          <Accordion
+            title="پروژه ها"
+            icon={
               <Icon
                 icon="solar:folder-with-files-broken"
                 width="22"
                 height="22"
                 className="text-purple-500"
               />
-              <span>برنامه ها </span>
+            }
+            qty="h-10"
+            color="text-purple-500"
+          >
+            <div className="w-full p-2 rounded-lg flex gap-3 duration-300  hover:bg-primary-900">
+              <Icon
+                icon="solar:calculator-minimalistic-broken"
+                width="24"
+                height="24"
+              />
+              <span>پروژه تمرینی</span>
             </div>
-            <Icon
-              icon="solar:alt-arrow-left-bold-duotone"
-              width="24"
-              height="24"
-              className="text-purple-500"
-            />
-          </div>
-          <div className="w-full px-2 flex justify-between py-3 rounded-lg duration-300  hover:bg-primary-900">
-            <div className="flex gap-3">
+          </Accordion>
+          <Accordion
+            title="اهداف"
+            icon={
               <Icon
                 icon="solar:cup-broken"
                 width="22"
                 height="22"
                 className="text-yellow-500"
               />
-              <span>اهداف</span>
+            }
+            qty="h-10"
+            color="text-yellow-500"
+          >
+            <div className="w-full p-2 rounded-lg flex gap-3 duration-300  hover:bg-primary-900">
+              <Icon icon="solar:sort-by-time-broken" width="24" height="24" />
+              <span>اهداف بلند مدت</span>
             </div>
-            <Icon
-              icon="solar:alt-arrow-left-bold-duotone"
-              width="24"
-              height="24"
-              className="text-yellow-500"
-            />
-          </div>
+          </Accordion>
           <div className="w-full px-2 flex justify-between py-3 rounded-lg duration-300  hover:bg-primary-900">
             <div className="flex gap-3">
               <Icon
@@ -107,12 +120,6 @@ function BurgerMenu({ isOpen, setIsOpen }: BurgerMenuProps) {
               />
               <span>تقویم</span>
             </div>
-            {/* <Icon
-              icon="solar:add-circle-broken"
-              width="24"
-              height="24"
-              className="text-rose-500"
-            /> */}
           </div>
           <div className="w-full px-2 flex justify-between py-3 rounded-lg duration-300  hover:bg-primary-900">
             <div className="flex gap-3">
@@ -124,12 +131,6 @@ function BurgerMenu({ isOpen, setIsOpen }: BurgerMenuProps) {
               />
               <span>یادداشت ها</span>
             </div>
-            {/* <Icon
-              icon="solar:add-circle-broken"
-              width="24"
-              height="24"
-              className="text-teal-500"
-            /> */}
           </div>
 
           <div className="w-full px-2 flex justify-between py-3 rounded-lg duration-300  hover:bg-primary-900">
@@ -142,12 +143,6 @@ function BurgerMenu({ isOpen, setIsOpen }: BurgerMenuProps) {
               />
               <span>خاطرات</span>
             </div>
-            {/* <Icon
-              icon="solar:add-circle-broken"
-              width="24"
-              height="24"
-              className="text-fuchsia-500"
-            /> */}
           </div>
         </div>
         <GradientLine />
@@ -171,7 +166,7 @@ function BurgerMenu({ isOpen, setIsOpen }: BurgerMenuProps) {
         </div>
       </div>
       <div
-        className={`w-[100px] h-[100vh] bg-primary-900 opacity-30 absolute top-0 left-0 sidebar ${
+        className={`w-[100px] h-[100vh] bg-primary-900 opacity-30 absolute top-0 sidebar ${
           isOpen ? "left-0 opacity-25" : "-left-[100vw] opacity-0"
         }`}
         onClick={() => setIsOpen(false)}
