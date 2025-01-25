@@ -88,6 +88,11 @@ input {
   overflow-x: hidden;
   transition: 1s all ease-in-out;
 }
+/* .custom-bg{
+  background-image: url(../public/OIP.jfif);
+  height: 50vh;
+  
+} */
 /* ______________________________________________________________________________components */
 
 @layer components {

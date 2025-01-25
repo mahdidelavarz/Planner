@@ -1,6 +1,6 @@
 import Login from "../pages/auth/Login";
 import SignUp from "../pages/auth/Signup";
-import Home from "../pages/ِDashboard";
+import Home from "../pages/Dashboard";
 import RoutinePlans from "../pages/RoutinePlans";
 
 const routes = [
