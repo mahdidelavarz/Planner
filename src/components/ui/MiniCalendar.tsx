@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 
 function MiniCalendar() {
-  return  <div className="w-full h-16  bg-primary-900  rounded-lg flex gap-6 justify-center items-center text-secondary-300 bg-opacity-60 shadow-md">
+  return  <div className="w-full h-16  text-sm bg-primary-900  rounded-lg flex gap-6 justify-center items-center text-secondary-300 bg-opacity-60 shadow-md">
   <Icon
     icon="solar:round-alt-arrow-right-broken"
     width="28"
