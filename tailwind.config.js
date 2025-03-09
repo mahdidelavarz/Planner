@@ -69,7 +69,7 @@ export default {
           50: withOpacity("#fbf4f8"),
         },
         background: {
-          900: withOpacity("#22222e"),
+          200: withOpacity("#F5F6F9"),
         },
         bordering: {
           200: withOpacity("#5c5d6d"),
