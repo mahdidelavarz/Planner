@@ -10,9 +10,8 @@ body {
   font-family: "vazir";
   min-height: 100vh;
   user-select: none;
-  background-color: rgb(var(--background-app-rgb));
   direction: rtl;
-  background-color: #22222e;
+  /* background-color: #22222e; */
 }
 * {
   box-sizing: border-box;
@@ -97,7 +96,7 @@ input {
 
 @layer components {
   .btn-full {
-    @apply w-full rounded-xl p-3 text-secondary-100 bg-secondary-900 text-xl hover:shadow-inner shadow-md duration-300 shadow-black hover:shadow-black;
+    @apply w-full rounded-xl p-2 text-secondary-100 bg-secondary-900 text-lg  shadow-sm duration-300 ;
   }
   .btn__secondary {
     @apply bg-secondary-600 text-secondary-100;
@@ -115,7 +114,7 @@ input {
     @apply w-5 h-5;
   }
   .input {
-    @apply p-3 outline-none  rounded-xl bg-primary-900 shadow-md focus:shadow-inner focus:shadow-black shadow-slate-950 text-secondary-200;
+    @apply px-3 py-2 outline-none  rounded-lg bg-white shadow-sm focus:shadow-inner focus:shadow-slate-300 shadow-slate-300 text-primary-900;
   }
   .header {
     @apply w-full h-16 shadow-sm shadow-slate-900 flex justify-between items-center px-4 text-secondary-200 gap-4 fixed top-0;

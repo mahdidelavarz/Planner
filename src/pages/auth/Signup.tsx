@@ -1,25 +1,25 @@
 import AuthLayout from "../../layout/AuthLayout";
-import { useForm, SubmitHandler } from "react-hook-form";
-import { Icon } from "@iconify/react";
+// import { useForm, SubmitHandler } from "react-hook-form";
+// import { Icon } from "@iconify/react";
 
-type Inputs = {
-  fname: string;
-  email: string;
-  password: number;
-  confirmPassword: number;
-};
+// type Inputs = {
+//   fname: string;
+//   email: string;
+//   password: number;
+//   confirmPassword: number;
+// };
 
 function SignUp() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   formState: { errors },
+  // } = useForm<Inputs>();
+  // const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
 
   return (
     <AuthLayout>
-      <div className="w-96 h-auto bg-primary-950 rounded-2xl shadow-md shadow-slate-950 z-50 custom-gradient flex flex-col gap-6 p-4">
+      {/* <div className="w-96 h-auto bg-primary-950 rounded-2xl shadow-md shadow-slate-950 z-50 custom-gradient flex flex-col gap-6 p-4">
         <h1 className="text-2xl text-secondary-300">ثبت نام</h1>
         <form
           onSubmit={handleSubmit(onSubmit)}
@@ -84,6 +84,9 @@ function SignUp() {
             ثبت نام
           </button>
         </form>
+      </div> */}
+      <div>
+        
       </div>
     </AuthLayout>
   );
