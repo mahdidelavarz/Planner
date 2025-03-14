@@ -97,7 +97,7 @@ input {
 
 @layer components {
   .btn-full {
-    @apply w-full rounded-xl p-3 text-secondary-100 bg-secondary-900 text-xl mt-6  hover:shadow-inner shadow-md duration-300 shadow-black hover:shadow-black;
+    @apply w-full rounded-xl p-3 text-secondary-100 bg-secondary-900 text-xl hover:shadow-inner shadow-md duration-300 shadow-black hover:shadow-black;
   }
   .btn__secondary {
     @apply bg-secondary-600 text-secondary-100;
